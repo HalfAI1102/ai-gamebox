@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI GameBox</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true">
+  <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+</div>
+
+<header class="top">
+  <div class="brand" id="home" title="回到大厅">
+    <span class="brand-mark" id="brand-mark"></span><span class="brand-text">AI <b>GameBox</b></span>
+  </div>
+  <div class="buddy-status">
+    <div class="buddy" id="buddy"></div>
+    <div class="status-pill" id="status">等 TA 上线…</div>
+    <button class="rename-btn" id="rename-btn" title="改昵称"></button>
+    <form class="rename-pop" id="rename-pop" autocomplete="off">
+      <label for="rename-input">TA 的名字</label>
+      <input id="rename-input" maxlength="12">
+      <label for="rename-human">你的昵称</label>
+      <input id="rename-human" maxlength="12">
+      <label>TA 的形象</label>
+      <div class="looks small" id="rename-looks"></div>
+      <div class="row"><button type="button" class="btn ghost" id="rename-cancel">取消</button><button class="btn blue">好了</button></div>
+    </form>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="stage card" id="stage"></section>
+
+  <aside class="chat card">
+    <div class="chat-head"><span id="chat-title">聊天</span><span class="chat-sub" id="chat-sub">边玩边聊吧</span></div>
+    <div class="chat-log" id="chat-log"></div>
+    <form class="chat-form" id="chat-form" autocomplete="off">
+      <input id="chat-input" maxlength="500" placeholder="说点什么～">
+      <button class="btn blue" type="submit">发送</button>
+    </form>
+  </aside>
+</main>
+
+<div class="setup" id="setup" hidden>
+  <form class="setup-card" id="setup-form" autocomplete="off">
+    <div class="setup-art" id="setup-art"></div>
+    <h2>欢迎来到 AI GameBox</h2>
+    <p class="setup-sub">先互相认识一下吧，之后随时可以在右上角改</p>
+    <label>你的昵称<input id="setup-human" maxlength="12" placeholder="比如：小鱼"></label>
+    <label>给 AI 起个名字<input id="setup-agent" maxlength="12" placeholder="比如：团团"></label>
+    <label>选一个形象</label>
+    <div class="looks" id="setup-looks"></div>
+    <button class="btn blue big">开始玩</button>
+  </form>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="confetti" id="confetti"></div>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+<script src="more-games.js"></script>
+<script src="party-games.js"></script>
+</body>
+</html>
