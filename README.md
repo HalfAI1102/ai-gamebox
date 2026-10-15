@@ -44,8 +44,8 @@ git clone https://github.com/HalfAI1102/ai-gamebox.git ~/.claude/skills/ai-gameb
 |---|---|
 | Claude Code | `~/.claude/skills/ai-gamebox/` |
 | Codex（CLI / App） | `~/.agents/skills/ai-gamebox/` |
-| WorkBuddy | `~/.workbuddy/skills/ai-gamebox/`，或在应用里导入技能（待实测） |
-| 豆包电脑版 | 技能 → 我的技能 → 新建 → 上传技能，把文件夹拖进去（待实测） |
+| WorkBuddy | `~/.workbuddy/skills/ai-gamebox/`，或在应用里导入技能 |
+| 豆包电脑版 | 技能 → 我的技能 → 新建 → 上传技能，把文件夹拖进去 |
 
 Windows 上 `~` 指 `C:\Users\你的用户名`。放好后重启一下 agent，然后对它说“打开 AI GameBox”“陪我玩个游戏”或“来局五子棋”就行。
 
